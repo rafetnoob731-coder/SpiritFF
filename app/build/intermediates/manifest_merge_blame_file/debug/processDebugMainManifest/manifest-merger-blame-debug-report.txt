@@ -1,0 +1,116 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.spirit.ff"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:5:5-77
+11-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+12-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:6:5-81
+12-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:6:22-79
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:7:5-79
+13-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:8:5-80
+14-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:9:5-76
+15-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:9:22-74
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:10:5-65
+16-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:10:22-63
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:11:5-67
+17-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:11:22-65
+18    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+18-->[dev.rikka.shizuku:provider:12.1.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/240e15790ae554db5af11a9c82272777/transformed/provider-12.1.0/AndroidManifest.xml:10:5-78
+18-->[dev.rikka.shizuku:provider:12.1.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/240e15790ae554db5af11a9c82272777/transformed/provider-12.1.0/AndroidManifest.xml:10:22-75
+19
+20    <application
+20-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:13:5-49:19
+21        android:allowBackup="false"
+21-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:14:9-36
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.7.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/6d93c6fcd922ec51f0119a97c2f48a7a/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:label="SpiritFF"
+25-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:15:9-33
+26        android:requestLegacyExternalStorage="true"
+26-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:16:9-52
+27        android:theme="@style/Theme.SpiritFF" >
+27-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:17:9-46
+28        <activity
+28-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:19:9-26:20
+29            android:name="com.spirit.ff.MainActivity"
+29-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:20:13-41
+30            android:exported="true" >
+30-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:21:13-36
+31            <intent-filter>
+31-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:22:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:23:17-68
+32-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:23:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:24:17-76
+34-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:24:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <!-- Our overlay service — no foregroundServiceType needed -->
+39        <service
+39-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:29:9-32:59
+40            android:name="com.spirit.ff.service.FloatingOverlayService"
+40-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:30:13-59
+41            android:exported="false" />
+41-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:31:13-37
+42
+43        <!-- Shizuku user service -->
+44        <service
+44-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:35:9-39:59
+45            android:name="com.spirit.ff.service.ShizukuUserService"
+45-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:36:13-55
+46            android:exported="true"
+46-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:37:13-36
+47            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+47-->/storage/emulated/0/APKPure/SpiritFF/app/src/main/AndroidManifest.xml:38:13-79
+48
+49        <meta-data
+49-->[dev.rikka.shizuku:provider:12.1.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/240e15790ae554db5af11a9c82272777/transformed/provider-12.1.0/AndroidManifest.xml:13:9-15:36
+50            android:name="moe.shizuku.client.V3_SUPPORT"
+50-->[dev.rikka.shizuku:provider:12.1.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/240e15790ae554db5af11a9c82272777/transformed/provider-12.1.0/AndroidManifest.xml:14:13-57
+51            android:value="true" />
+51-->[dev.rikka.shizuku:provider:12.1.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/240e15790ae554db5af11a9c82272777/transformed/provider-12.1.0/AndroidManifest.xml:15:13-33
+52
+53        <provider
+53-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/9e052744cd8b1b951ed40027c73f2617/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+54            android:name="androidx.startup.InitializationProvider"
+54-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/9e052744cd8b1b951ed40027c73f2617/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+55            android:authorities="com.spirit.ff.androidx-startup"
+55-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/9e052744cd8b1b951ed40027c73f2617/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+56            android:exported="false" >
+56-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/9e052744cd8b1b951ed40027c73f2617/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+57            <meta-data
+57-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/9e052744cd8b1b951ed40027c73f2617/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+58                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+58-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/9e052744cd8b1b951ed40027c73f2617/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+59                android:value="androidx.startup" />
+59-->[androidx.emoji2:emoji2:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/9e052744cd8b1b951ed40027c73f2617/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+60            <meta-data
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/63dc2b7c67c21cfd5c30dbd613ba61b7/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+61                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+61-->[androidx.lifecycle:lifecycle-process:2.4.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/63dc2b7c67c21cfd5c30dbd613ba61b7/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+62                android:value="androidx.startup" />
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] /data/data/com.termux/files/home/.gradle/caches/9.6.0/transforms/63dc2b7c67c21cfd5c30dbd613ba61b7/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+63        </provider>
+64    </application>
+65
+66</manifest>

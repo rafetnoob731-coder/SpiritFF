@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.spirit.ff.app-debug-26:/layout_activity_main.xml.flat",
+        "source": "com.spirit.ff.app-main-28:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.spirit.ff.app-debug-26:/layout_floating_panel.xml.flat",
+        "source": "com.spirit.ff.app-main-28:/layout/floating_panel.xml"
+    }
+]

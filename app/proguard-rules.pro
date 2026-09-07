@@ -1,0 +1,5 @@
+-keep class com.spirit.ff.IUserService { *; }
+-keep class com.spirit.ff.IUserService$Stub { *; }
+-keep class com.spirit.ff.service.ShizukuUserService { *; }
+-keepattributes *Annotation*
+-dontwarn rikka.**

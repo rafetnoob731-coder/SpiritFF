@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EE0F0F1A"
+    android:padding="10dp">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:text="SpiritFF"
+            android:textColor="#A78BFA" android:textStyle="bold" android:textSize="14sp"
+            android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <View android:id="@+id/statusDot"
+            android:layout_width="10dp" android:layout_height="10dp"
+            android:background="#EF4444"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvStatus"
+        android:text="Waiting for Free Fire..."
+        android:textColor="#F59E0B" android:textSize="10sp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="#2D2D44"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Aimbot -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="#1A1A2E" android:layout_marginBottom="4dp" android:padding="6dp">
+        <TextView android:text="🎯 Aimbot"
+            android:textColor="#9CA3AF" android:textSize="12sp"
+            android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switchAimbot"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <!-- ESP -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="#1A1A2E" android:layout_marginBottom="4dp" android:padding="6dp">
+        <TextView android:text="👁 ESP Radar"
+            android:textColor="#9CA3AF" android:textSize="12sp"
+            android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switchEsp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Teleport -->
+    <Button android:id="@+id/btnTeleport"
+        android:text="⚡ TP to Loot"
+        android:textSize="12sp" android:textColor="#FFFFFF"
+        android:backgroundTint="#10B981"
+        android:layout_width="match_parent" android:layout_height="36dp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Fast Sniper -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="#1A1A2E" android:layout_marginBottom="4dp" android:padding="6dp">
+        <TextView android:text="🔫 Fast Sniper"
+            android:textColor="#9CA3AF" android:textSize="12sp"
+            android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switchFastSniper"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Magic Bullet -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="#1A1A2E" android:layout_marginBottom="4dp" android:padding="6dp">
+        <TextView android:text="✨ Magic Bullet"
+            android:textColor="#9CA3AF" android:textSize="12sp"
+            android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switchMagicBullet"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Aura Kill -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="#1A1A2E" android:padding="6dp">
+        <TextView android:text="🔥 Aura Kill"
+            android:textColor="#9CA3AF" android:textSize="12sp"
+            android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switchAuraKill"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

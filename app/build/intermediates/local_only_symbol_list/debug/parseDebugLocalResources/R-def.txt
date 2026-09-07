@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+id btnLaunch
+id btnStop
+id btnTeleport
+id statusDot
+id switchAimbot
+id switchAuraKill
+id switchEsp
+id switchFastSniper
+id switchMagicBullet
+id tvGameStatus
+id tvPermOverlay
+id tvPermShizuku
+id tvPermStorage
+id tvStatus
+layout activity_main
+layout floating_panel
+string app_name
+style Theme.SpiritFF
