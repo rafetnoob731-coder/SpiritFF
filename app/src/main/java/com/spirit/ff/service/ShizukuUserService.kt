@@ -84,9 +84,9 @@ class ShizukuUserService : IUserService.Stub() {
 
     override fun injectTouch(x: Float, y: Float, ex: Float, ey: Float, ms: Int): Boolean {
         return try {
-            val im = InputManager.getInstance()
+            val im = InputManager::class.java.getDeclaredMethod("getInstance").apply { isAccessible = true }.invoke(null)
             val inject = im.javaClass.getDeclaredMethod("injectInputEvent",
-                android.view.InputEvent::class.java, Int::class.java
+                android.view.InputEvent::class.java, Int::class.javaPrimitiveType
             ).apply { isAccessible = true }
             val down = SystemClock.uptimeMillis()
             fun send(action: Int, px: Float, py: Float, t: Long) {
