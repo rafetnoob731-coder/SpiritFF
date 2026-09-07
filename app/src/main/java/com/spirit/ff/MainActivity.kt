@@ -30,9 +30,11 @@ class MainActivity : AppCompatActivity() {
     private val shizukuListener =
         Shizuku.OnRequestPermissionResultListener { _, _ -> updatePermissions() }
 
-    private val serviceArgs = Shizuku.UserServiceArgs(
-        ComponentName(packageName, ShizukuUserService::class.java.name)
-    ).daemon(false).processNameSuffix("service").version(1)
+    private val serviceArgs: Shizuku.UserServiceArgs by lazy {
+        Shizuku.UserServiceArgs(
+            ComponentName(packageName, ShizukuUserService::class.java.name)
+        ).daemon(false).processNameSuffix("service").version(1)
+    }
 
     private val shizukuConn = object : ServiceConnection {
         override fun onServiceConnected(n: ComponentName, b: IBinder) {
