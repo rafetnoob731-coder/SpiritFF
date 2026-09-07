@@ -45,12 +45,14 @@ class FloatingOverlayService : Service() {
                 updateStatus(ok)
                 if (!ok) stopAll()
             }
+            tvEspDebug?.text = "esp: ${EspData.debug}"
             handler.postDelayed(this, 2000)
         }
     }
 
     // View refs
     private var tvStatus:         TextView? = null
+    private var tvEspDebug:       TextView? = null
     private var statusDot:        View?     = null
     private var switchAimbot:     Switch?   = null
     private var switchEsp:        Switch?   = null
@@ -96,6 +98,7 @@ class FloatingOverlayService : Service() {
         panelView = LayoutInflater.from(this).inflate(R.layout.floating_panel, null)
 
         tvStatus          = panelView.findViewById(R.id.tvStatus)
+        tvEspDebug        = panelView.findViewById(R.id.tvEspDebug)
         statusDot         = panelView.findViewById(R.id.statusDot)
         switchAimbot      = panelView.findViewById(R.id.switchAimbot)
         switchEsp         = panelView.findViewById(R.id.switchEsp)

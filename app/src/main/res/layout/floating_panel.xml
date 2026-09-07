@@ -20,6 +20,12 @@
     <TextView android:id="@+id/tvStatus"
         android:text="Waiting for Free Fire..."
         android:textColor="#F59E0B" android:textSize="10sp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/tvEspDebug"
+        android:text="esp: idle"
+        android:textColor="#6B7280" android:textSize="9sp"
         android:layout_marginBottom="8dp"
         android:layout_width="wrap_content" android:layout_height="wrap_content"/>
 
