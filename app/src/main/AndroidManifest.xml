@@ -8,7 +8,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="rikka.shizuku.permission.API_V23" />
 
     <application
         android:allowBackup="false"
@@ -45,6 +46,13 @@
         <service
             android:name="rikka.shizuku.server.ShizukuService"
             tools:node="remove"/>
+
+        <provider
+            android:name="rikka.shizuku.ShizukuProvider"
+            android:authorities="com.spirit.ff.shizuku"
+            android:exported="true"
+            android:enabled="true"
+            android:multiprocess="false" />
 
     </application>
 </manifest>
